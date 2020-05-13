@@ -25,14 +25,14 @@ def sorting(array):
             if array[j] > array[j+1] : 
                 array[j], array[j+1] = array[j+1], array[j]
 
-test = int(input("No of test:"))
+test = int(input())
 ls = []
 demo = 0
 if test>=1 and test<=10:
     for i in range(1,test+1):
-        sizeOfarray = int(input("Enter size of array"))
+        sizeOfarray = int(input())
         if sizeOfarray>=1 and sizeOfarray<=10000:
-            print("Enter the elements of array")
+            print()
             array = list()
             for j in range(sizeOfarray):
                 val = int(input())
@@ -40,21 +40,21 @@ if test>=1 and test<=10:
                     array.append(val)
                 else:
                     demo = 1
-                    print("ERROR")
+                  
                     break
             if demo==0:
                 sorting(array)    
                 ls.append(myFunc(array))
         else:
             demo = 1
-            print("ERROR")
+ 
             break
 else:
     demo = 1
-    print("ERROR")
+    
 
 if demo==0:
-    print("OUTPUT....")
+    
     for value in ls:
         print(value,end=" ")
     
