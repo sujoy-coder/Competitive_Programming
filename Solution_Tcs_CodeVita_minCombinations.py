@@ -10,11 +10,10 @@ def myFunction(num_1,num_2):
             return itr
         itr = itr + 1
 
-test = int(input("No of test:"))
+test = int(input())
 ans_list = []
 if test>=1 and test<=1000:
     for i in range(1,test+1):
-        print("Enter n1 and n2 seperated by space :")
         num_1,num_2 = input().split(" ")
         num_1 = int(num_1)
         num_2 = int(num_2)
