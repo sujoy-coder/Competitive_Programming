@@ -25,11 +25,11 @@ def myFunction(string):
         
     return
 
-test = int(input("No of test:"))
+test = int(input())
 ans_list = []
 if test>=1 and test<=100:
     for i in range(1,test+1):
-        print("Enter the STRING :")
+        print()
         string = input()
         myFunction(string)
 else:
